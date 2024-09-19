@@ -74,7 +74,7 @@ function getBirthYearMovies(e){
         let imgUrl = "https://image.tmdb.org/t/p/w400";   
 
         // ajax time!
-        let xhr = new XMLHttpRequest();
+        const xhr = new XMLHttpRequest();
 
         // create the object
 
