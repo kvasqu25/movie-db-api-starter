@@ -110,7 +110,7 @@ function getBirthYearMovies(e){
         xhr.open("GET", endpoint);
 
         // Send the request
-        xhr.send(data);
+        xhr.send();
     }
 }
 
