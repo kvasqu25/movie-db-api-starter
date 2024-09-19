@@ -22,8 +22,8 @@ function getPopularMovies(){
         let html = "";
         //feature popular movie
         html += `
-            <section id="feature">
-                <h3>${json.results[0].tittle}</h3>
+            <section id="featured">
+                <h3>${json.results[0].title}</h3>
                 <img src="${imgUrl}${json.results[0].poster_path}" alt="">
                 <p>${json.results[0].overview}</p>
             </section>
@@ -34,7 +34,7 @@ function getPopularMovies(){
                 <section class="movie">
                     <img src="${imgUrl}${json.results[i].poster_path}" alt"">
                     <div>
-                        <h3>${json.results[i].tittle}</h3>
+                        <h3>${json.results[i].title}</h3>
                         <p>
                              ${json.results[i].overview}
                             <span class="vote">Vote Average: ${json.results[i].vote_average}</span>
@@ -91,10 +91,10 @@ function getBirthYearMovies(e){
             }else{
                         html +=  `
                                 <section class="yrMovie">
-                                    <img src="${imgUrl}${json.results[i].poster_path}" alt"">
-                                    <div>
-                                        <h3>${json.results[i].tittle}</h3>
-                                    </div>
+                                    <img src="${imgUrl}${json.results[i].poster_path}" alt="">
+                                    
+                                        <h3>${json.results[i].title}</h3>
+                                    
                                 </section>
                         `;
                 }
